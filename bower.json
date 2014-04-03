@@ -1,0 +1,22 @@
+{
+  "name": "archetypo-view",
+  "main": "built/archetypo-view.js",
+  "version": "0.1.0",
+  "description": "Some module...",
+  "dependencies": {
+    "lowercase-backbone": "~0.2.3",
+    "lodash": "~2.4.1",
+    "backbone.model.tree": "~0.1.2",
+    "q": "1.0.0"
+  },
+  "devDependencies": {
+    "requirejs": "*",
+    "requirejs-text": "*",
+    "underscore": "*",
+    "jquery": "*",
+    "qunit": "*"
+  },
+  "resolutions": {
+    "q": "1.0.0"
+  }
+}

@@ -1,0 +1,286 @@
+{
+    "project": {
+        "name": "archetypo-view",
+        "version": "0.0.0"
+    },
+    "files": {
+        "src/__archetypo-view/functions/tokenize.js": {
+            "name": "src/__archetypo-view/functions/tokenize.js",
+            "modules": {
+                "view": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/__archetypo-view/methods/build-sub-views.js": {
+            "name": "src/__archetypo-view/methods/build-sub-views.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/__archetypo-view/methods/register.js": {
+            "name": "src/__archetypo-view/methods/register.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/__archetypo-view/methods/render.js": {
+            "name": "src/__archetypo-view/methods/render.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/__archetypo-view/objects/registry.js": {
+            "name": "src/__archetypo-view/objects/registry.js",
+            "modules": {
+                "registry": 1
+            },
+            "classes": {
+                "registry": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/index.js": {
+            "name": "src/index.js",
+            "modules": {
+                "archetypo-view": 1
+            },
+            "classes": {
+                "view": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "archetypo": {
+            "name": "archetypo",
+            "submodules": {
+                "view": 1,
+                "registry": 1
+            },
+            "classes": {
+                "registry": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "file": "src/__archetypo-view/objects/registry.js",
+            "line": 14
+        },
+        "view": {
+            "name": "view",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "archetypo",
+            "namespace": "",
+            "file": "src/__archetypo-view/functions/tokenize.js",
+            "line": 1
+        },
+        "registry": {
+            "name": "registry",
+            "submodules": {},
+            "classes": {
+                "registry": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "archetypo",
+            "namespace": "",
+            "file": "src/__archetypo-view/objects/registry.js",
+            "line": 14,
+            "description": "The registry is just a Bakbone.Model.Tree Object\nwith some special methods to get the 'item' attributes\nfrom the branch models."
+        },
+        "archetypo-view": {
+            "name": "archetypo-view",
+            "submodules": {},
+            "classes": {
+                "view": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src/index.js",
+            "line": 19
+        }
+    },
+    "classes": {
+        "registry": {
+            "name": "registry",
+            "shortname": "registry",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "archetypo",
+            "submodule": "registry",
+            "namespace": "",
+            "file": "src/__archetypo-view/objects/registry.js",
+            "line": 14,
+            "description": "The registry is just a Bakbone.Model.Tree Object\nwith some special methods to get the 'item' attributes\nfrom the branch models.",
+            "is_constructor": 1
+        },
+        "view": {
+            "name": "view",
+            "shortname": "view",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "archetypo-view",
+            "namespace": "",
+            "file": "src/index.js",
+            "line": 19,
+            "description": "The view builder. It is basically a Backbone.View",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "options",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        }
+    },
+    "classitems": [
+        {
+            "file": "src/__archetypo-view/functions/tokenize.js",
+            "line": 11,
+            "description": "Converts a str to camelCase",
+            "itemtype": "method",
+            "name": "camelCase",
+            "params": [
+                {
+                    "name": "str",
+                    "description": ""
+                }
+            ],
+            "class": "registry",
+            "module": "archetypo",
+            "submodule": "view"
+        },
+        {
+            "file": "src/__archetypo-view/functions/tokenize.js",
+            "line": 26,
+            "description": "Converts a string into an array.",
+            "itemtype": "method",
+            "name": "tokenize",
+            "params": [
+                {
+                    "name": "str",
+                    "description": ""
+                }
+            ],
+            "class": "registry",
+            "module": "archetypo",
+            "submodule": "view"
+        },
+        {
+            "file": "src/__archetypo-view/methods/build-sub-views.js",
+            "line": 14,
+            "description": "Instantiates the subview.",
+            "itemtype": "method",
+            "name": "buildSubview",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "el",
+                    "description": "",
+                    "type": "Plain DOM Object"
+                }
+            ],
+            "class": "registry",
+            "module": "archetypo",
+            "submodule": "view"
+        },
+        {
+            "file": "src/__archetypo-view/methods/build-sub-views.js",
+            "line": 58,
+            "description": "Builds the subviews of this view.",
+            "itemtype": "method",
+            "name": "buildSubviews",
+            "params": [
+                {
+                    "name": "options",
+                    "description": ""
+                }
+            ],
+            "class": "registry",
+            "module": "archetypo",
+            "submodule": "view"
+        },
+        {
+            "file": "src/__archetypo-view/methods/render.js",
+            "line": 12,
+            "description": "Does all the dirty stuff.",
+            "itemtype": "method",
+            "name": "_render",
+            "access": "private",
+            "tagname": "",
+            "class": "registry",
+            "module": "archetypo",
+            "submodule": "view"
+        },
+        {
+            "file": "src/__archetypo-view/methods/render.js",
+            "line": 70,
+            "description": "Verifies for cached render call.",
+            "itemtype": "method",
+            "name": "render",
+            "params": [
+                {
+                    "name": "options",
+                    "description": ""
+                }
+            ],
+            "class": "registry",
+            "module": "archetypo",
+            "submodule": "view"
+        },
+        {
+            "file": "src/__archetypo-view/objects/registry.js",
+            "line": 25,
+            "description": "Selects the descending branch models and map\nthe results to return directly the 'item' attribute.",
+            "itemtype": "method",
+            "name": "descendantItems",
+            "params": [
+                {
+                    "name": "criteria",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "registry",
+            "module": "archetypo",
+            "submodule": "registry"
+        },
+        {
+            "file": "src/index.js",
+            "line": 62,
+            "description": "Selects the view objcets that descend from this view.",
+            "itemtype": "method",
+            "name": "subviews",
+            "params": [
+                {
+                    "name": "selector",
+                    "description": "",
+                    "type": "Object|[String]"
+                }
+            ],
+            "class": "view",
+            "module": "archetypo-view"
+        }
+    ],
+    "warnings": []
+}

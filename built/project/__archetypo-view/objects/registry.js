@@ -1,0 +1,1 @@
+define(["require","exports","module","lodash","lowercase-backbone","backbone.model.tree"],function(e,t,n){var r=e("lodash"),i=e("lowercase-backbone"),s=e("backbone.model.tree"),o=n.exports=s.extend({idAttribute:"_id",descendantItems:function(t){var n=this.selectDescendants(t);return n.map(function(e){return e.get("item")})}})});
