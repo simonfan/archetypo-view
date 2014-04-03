@@ -12,7 +12,7 @@ define(function (require, exports, module) {
 	module.exports = backbone.view.extend({
 
 		initialize: function initialize(options) {
-			backbone.view.prototype.initialize.call(this, options);
+			this.initializeBackboneView(options);
 			this.initializeArchetypoView(options);
 		},
 
@@ -25,6 +25,10 @@ define(function (require, exports, module) {
 		 */
 		initializeArchetypoView: function initializeArchetypoView(options) {
 
+			if (!this.$el) {
+				throw new Error('archetypo-view requires an $el to operate.')
+			}
+
 			options = options || {};
 
 			// save reference to app.
@@ -34,18 +38,18 @@ define(function (require, exports, module) {
 			// If there is an 'html' property
 			// build up an element with it place it within $el.
 			// render is ASYNC
-			var render = this.render(options);
+			var renderPromise = this.render(options);
 
 			// [2] Register view (synchornously)
 			this.register(options);
 
 			// [3] render and build up subviews
-			if (q.isPromise(render)) {
+			if (q.isPromise(renderPromise)) {
 
 				// if this.render returns a promise,
 				// wait for it to be resolved.
 
-				render.then(_.partial(_.bind(this.build, this), options));
+				renderPromise.then(_.partial(_.bind(this.build, this), options));
 
 			} else {
 				// if it returns anything else (including undefined)

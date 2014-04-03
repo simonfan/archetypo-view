@@ -234,7 +234,7 @@
         },
         {
             "file": "src/__archetypo-view/methods/render.js",
-            "line": 70,
+            "line": 72,
             "description": "Verifies for cached render call.",
             "itemtype": "method",
             "name": "render",
@@ -267,7 +267,7 @@
         },
         {
             "file": "src/index.js",
-            "line": 62,
+            "line": 66,
             "description": "Selects the view objcets that descend from this view.",
             "itemtype": "method",
             "name": "subviews",

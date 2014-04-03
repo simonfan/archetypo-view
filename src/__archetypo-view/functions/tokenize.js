@@ -15,7 +15,7 @@ define(function (require, exports, module) {
 	 * @param str
 	 */
 	function camelCase(str) {
-		return str.replace(/^-ms-/, "ms-").replace(/-([a-z]|[0-9])/ig, function(all, letter) {
+		return str.replace(/^-ms-/, "ms-").replace(/-([a-z]|[0-9])/ig, function (all, letter) {
 			return (letter + "").toUpperCase();
 		});
 	}

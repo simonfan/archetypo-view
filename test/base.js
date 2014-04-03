@@ -30,26 +30,29 @@
 			var bodyView = archetypoView.extend({
 
 				initialize: function initialize(options) {
+					this.initializeBackboneView(options);
 					this.initializeArchetypoView(options);
 
-					options.el.append('body!');
+					this.$el.append('body!');
 				},
 
 			});
 
 			var navView = archetypoView.extend({
 				initialize: function initialize(options) {
+					this.initializeBackboneView(options);
 					this.initializeArchetypoView(options);
 
-					options.el.append('[nav]');
+					this.$el.append('[nav]');
 				}
 			});
 
 			var inputBoxView = archetypoView.extend({
 				initialize: function initialize(options) {
+					this.initializeBackboneView(options);
 					this.initializeArchetypoView(options);
 
-					options.el.append('input!!')
+					this.$el.append('input!!')
 				}
 			})
 

@@ -64,7 +64,7 @@ define(function (require, exports, module) {
 	 */
 	module.exports = function buildSubviews(options) {
 		//>>excludeStart("exclude", pragmas.exclude);
-		console.log('build')
+		console.log('build');
 		//>>excludeEnd("exclude");
 
 		var app = options.app;

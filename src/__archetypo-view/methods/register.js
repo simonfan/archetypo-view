@@ -13,7 +13,7 @@ define(function (require, exports, module) {
 
 	module.exports = function register(options) {
 		//>>excludeStart("exclude", pragmas.exclude);
-		console.log('register')
+		console.log('register');
 		//>>excludeEnd("exclude");
 
 		options = options || {};

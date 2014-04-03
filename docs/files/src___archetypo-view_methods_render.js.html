@@ -123,12 +123,14 @@ define(function (require, exports, module) {
 		// If there is an &#x27;html&#x27; property
 		// build up an element with it place it within $el.
 
+		console.log(this);
+
 		var htmlSource = this.$el.data(&#x27;html&#x27;);
 
 		// [2] retrieve html
 		if (htmlSource) {
 			//&gt;&gt;excludeStart(&quot;exclude&quot;, pragmas.exclude);
-			console.log(&#x27;render async&#x27;)
+			console.log(&#x27;render async&#x27;);
 			//&gt;&gt;excludeEnd(&quot;exclude&quot;);
 
 			// async resolution
@@ -146,7 +148,7 @@ define(function (require, exports, module) {
 
 		} else {
 			//&gt;&gt;excludeStart(&quot;exclude&quot;, pragmas.exclude);
-			console.log(&#x27;render directly&#x27;)
+			console.log(&#x27;render directly&#x27;);
 			//&gt;&gt;excludeEnd(&quot;exclude&quot;);
 
 			// immediate resolution
@@ -173,7 +175,7 @@ define(function (require, exports, module) {
 	 */
 	module.exports = function render(options) {
 		//&gt;&gt;excludeStart(&quot;exclude&quot;, pragmas.exclude);
-		console.log(&#x27;render&#x27;)
+		console.log(&#x27;render&#x27;);
 		//&gt;&gt;excludeEnd(&quot;exclude&quot;);
 
 		if (!this.renderPromise) {
